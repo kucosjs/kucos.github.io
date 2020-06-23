@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open source comments and kudos server for static websites">
+    <title>Kucos - Open source Comments and Kudos server</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/pure/pure-min.css">
+    <link rel="stylesheet" href="/assets/css/pure/grids-responsive-min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <a href="/"><img src="/kucos.png" /></a>
+                <h1 class="brand-title">Kucos</h1>
+                <h2 class="brand-tagline">Open source comments and kudos server for static websites</h2>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="/installation.html">Installation</a>
+                            <a class="pure-button" href="https://github.com/skorotkiewicz/kucos">GitHub</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="content pure-u-1 pure-u-md-3-4">
+            <div>
+                <div class="posts">
+                    <section class="post">
+                        <header class="post-header"> 
+                            <h2 style="text-align:center;" class="post-title">Introducing Kucos <img style="vertical-align:middle;" src="/assets/img/kucos.gif" /></h2>
+                        </header>
+                        <div class="post-description">
+                            <p>Simple and privacy focused comments with kudos.</p>
+                            <p>You don't need a server to host your comment system, you can easily host Kucos on <s>ZEIT NOW</s> (now <a href="https://vercel.com/">Vercel</a>) and database on Mongo Atlas where 500mb is for free (for comments it is a lot space :)).</p>
+                            <p>Kucos is focused on complete user privacy and data security, that' s why commenting is completely anonymous, no account is needed.</p>
+                            <p>Kucos is written entirely in JavaScript, backend in <em>NodeJS</em> with <em>MongoDB (Mongoose)</em> and frontend in pure JS.<br>
+                                Source of Kucos can be found on GitHub, I invite you to test the demo on this page, also I'm happy to see pull requests with your fixes or new features :)</p>
+                            <p>A simple <em>Markdown</em> is also available, <a href="/markdown.html">here</a> you can check out the available Markdown.</p>
+                            <p>
+                                <strong>Available functions:</strong>
+                                <ul>
+                                    <li>- Writing new comments</li>
+                                    <li>- Reply to comments</li>
+                                    <li>- Fast quote comments (select text and click <em>Reply</em>)</li>
+                                    <li>- Hidding/showing children comments</li>
+                                    <li>- Voting on comments</li>
+                                    <li>- Markdown text formatting</li>
+                                    <li>- Adding Kudos under post</li>
+                                </ul>
+                            </p>
+                            <p>
+                                <strong>Add Kucos to your website</strong>
+                                <p>To add Kucos to your website you only need to add two additional lines.</p>
+                                <ul>
+                                    <li><code>&lt;div id="comments"&gt;&lt;/div&gt;</code></li>
+                                    <li><code>&lt;script src="http://localhost:3000/min/kucos.min.js"&gt;&lt;/script&gt;</code></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="comments"></div>
+
+                <div class="footer">
+                    <div class="pure-menu pure-menu-horizontal">
+                        <ul>
+                            <li class="pure-menu-item"><a href="https://kucos.now.sh" class="pure-menu-link">About</a></li>
+                            <li class="pure-menu-item"><a href="https://twitter.com/skorotkiewicz" class="pure-menu-link">Twitter</a></li>
+                            <li class="pure-menu-item"><a href="https://github.com/skorotkiewicz/kucos" class="pure-menu-link">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/min/kucos.min.js"></script> 
+
+</body>
+</html>
